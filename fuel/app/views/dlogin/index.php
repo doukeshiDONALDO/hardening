@@ -5,7 +5,7 @@
 <META http-equiv="ContentType" content="text/html:charset=utf-8">
 <META http-equiv="X-UA-Compatible" content="IE=Edge">
 <!--
-<LINK href="学生ポータル.files/portal.css" 
+<LINK href="files/portal.css" 
 rel="stylesheet" type="text/css">
 -->
 <?php echo Asset::css("portal.css"); ?>
@@ -17,29 +17,26 @@ rel="stylesheet" type="text/css">
 <HEADER>   
 <DIV class="headers">
 <DIV class="studentTab">
-<SPAN class="dispPC"><A class="studentPortal selectedTab" href="">
+<SPAN class="dispPC">
+<A class="studentPortal selectedTab" href="">
 <!--
 <IMG src="学生ポータル.files/student_portal.png">
 -->   
 <?php echo Asset::img('student_portal.png'); ?>    
-    
-<SPAN>学生ポータル</SPAN>      </A>              
-  <A class="crrclmFlow disabled" href="javascript:void(0)">
-
+<SPAN>学生ポータル</SPAN>      
+</A>              
+<A class="crrclmFlow disabled" href="">
 <!--      
 <IMG src="学生ポータル.files/crrclm_flow.png">
 -->
 <?php echo Asset::img('crrclm_flow.png'); ?>
-      
-      <SPAN>課題提出</SPAN> 
-              </A>               </SPAN>    </DIV>
-              <DIV class="studentUsers">          
-    <SPAN>ログアウト中</SPAN>        </DIV></DIV>
-<DIV class="studentTabSP dispSP"><A class="studentPortal selectedTab" href="">
-<SPAN>学生ポータル</SPAN> 
-   </A>              <A class="crrclmFlow disabled" 
-href="javascript:void(0)">
-<SPAN>課題提出</SPAN>      </A>             
+<SPAN>課題提出</SPAN> 
+</A>
+</SPAN>
+</DIV>
+<DIV class="studentUsers">          
+    <SPAN>ログアウト中</SPAN>        
+</DIV>
 </DIV>
 </HEADER>
 
@@ -51,8 +48,7 @@ href="javascript:void(0)">
 <!--ユーザ名・パスワード入力フォーム-->    
 <FORM name="loginform" action="/portal/student/inKITP0000001Login" 
 method="post">
-    <INPUT name="_csrf" type="hidden" value="2a69f221-5149-47d9-954c-ca281f498598"> 
-    <INPUT name="password" type="hidden">         
+       
 <TABLE id="loginTbl">
     <TBODY>
     <TR>
@@ -87,31 +83,6 @@ Chromeでご利用ください。</P></DIV>
   <LI>作業が終了したら必ずブラウザを終了してください</LI>
   <LI>ブラウザが利用者ＩＤ、パスワードの保存をたずねてきた場合は「保存しない」ようにしてください</LI></UL>
 <P>※ パスワードを忘れた場合<BR>.......</P></DIV></DIV></DIV>
-<DIV class="infos">
-<DIV id="KITPC00400ViewPane">
-<FORM id="searchform" action="/portal/KITPC0400/KITPC040001PagePrev" method="post">
-<DIV class="normalContent KITPC0400" id="KITPC0400">
-<DIV class="messageArea" id="messageAreaKITPC0400"></DIV><INPUT name="destAddressC0400" class="destAddressC0400" id="destAddressC0400" type="hidden" value="/KITPC0400"> 
-   <SECTION class="resultList">
-<DIV class="resultListDiv">
-<TABLE id="searchResult">
-  <COLGROUP>
-  <COL class="col1">
-  <COL class="col2">
-  <COL class="col3">
-  <COL class="col4">
-  <COL class="col5">
-  <COL class="col6"></COLGROUP>
-  <THEAD>
-  <TR>
-    <TD colspan="7">
-      <UL class="resultListTitle" 
-id="Kitpc0400Title"></UL><INPUT class="hide" id="kitpc0400Research" type="submit" formmethod="post" value="クエリ送信"> 
-                 </TD></TR></THEAD>
-  <TBODY class="visible-pc" id="Kitpc0400List"></TBODY>
-  <TBODY class="visible-sp" 
-id="Kitpc0400ListSP"></TBODY></TABLE></DIV></SECTION></DIV>
-<DIV><INPUT name="_csrf" type="hidden" value="2a69f221-5149-47d9-954c-ca281f498598"> 
-</DIV></FORM></DIV><FOOTER></FOOTER></DIV>
+
   </BODY></HTML>
 
