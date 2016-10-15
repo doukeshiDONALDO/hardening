@@ -18,8 +18,8 @@ class Controller_Dhome extends Controller
             // 初期設定
             $config = array(
                 'path' => DOCROOT.DS.'files',
-                'randomize' => true,
-                'ext_whitelist' => array('img', 'jpg', 'jpeg', 'gif', 'png'),
+//                'randomize' => true,
+//                'ext_whitelist' => array('img', 'jpg', 'jpeg', 'gif', 'png'),
             );
 
             // アップロード基本プロセス実行
@@ -30,7 +30,7 @@ class Controller_Dhome extends Controller
             {
                 // 保存
                 Upload::save();
-
+               echo "<script>alert('fileupload SUCCESS!'); </script>";
             }
 
             // エラー有り
