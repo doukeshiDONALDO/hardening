@@ -103,7 +103,16 @@ rel="stylesheet" type="text/css">
         </TBODY></TABLE></DIV></DIV></DIV></DIV>
 
 
-</DIV></ARTICLE><NAV id="studentMenu">
+</DIV>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="upload_file">
+    <input type="submit" name="submit" value="送信">
+</form>
+
+
+
+
+</ARTICLE><NAV id="studentMenu">
 <DIV>
 <DIV class="menuHeader">修学情報</DIV>       　      
 <DIV><A href="https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00600">時間割</A></DIV>

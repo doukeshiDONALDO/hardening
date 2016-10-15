@@ -14,7 +14,32 @@ class Controller_Dhome extends Controller
    	 2 => [ 'date' => 30, 'filename' => 'こんにちは、世界！' ],
    	 3 => [ 'date' => 20, 'filename' => 'Salve , per omnia saecula !' ],
 		];
-   
+		if(Input::method() === 'POST') {
+            // 初期設定
+            $config = array(
+                'path' => DOCROOT.DS.'files',
+                'randomize' => true,
+                'ext_whitelist' => array('img', 'jpg', 'jpeg', 'gif', 'png'),
+            );
+
+            // アップロード基本プロセス実行
+            Upload::process($config);
+
+            // 検証
+            if (Upload::is_valid())
+            {
+                // 保存
+                Upload::save();
+
+            }
+
+            // エラー有り
+            foreach (Upload::get_errors() as $file)
+            {
+                var_dump($file['errors']);
+                // エラー処理
+            }
+        }   
       return View::forge('dhome/index',$data);
     }
 
