@@ -62,9 +62,9 @@ rel="stylesheet" type="text/css">
 
 	<?php foreach ($rows as $row): ?>
 				<tr>
-					<td nowrap=""><?php echo $row["date"]; ?></td>
+					<td nowrap=""><?php echo $row["upload_time"]; ?></td>
 					<TD class="KITP00200PC"></TD><!-- このtdタグを削除するとレイアウト崩れるので削除せずに残している-->
-					<TD><A class="KITP00200Portfolio" href="" ><?php echo $row["filename"]; ?></A></TD>
+               <TD><A class="KITP00200Portfolio" href="/hardening/public/assets/files/<?php echo $row["file_name"]; ?>" ><?php echo $row["file_name"]; ?></A></TD>
             </tr>
    <?php endforeach;?>
 <!-- 以下出力例
