@@ -39,7 +39,14 @@ class Controller_Dhome extends Controller
                 var_dump($file['errors']);
                 // エラー処理
             }
-        }   
+      }
+//       $viewdata = null;
+//	    $query = DB::query('select * from `file`');
+//	    $viewdata = $query->execute();
+ //      var_dump($viewdata);
+
+//	    die(); 
+
       return View::forge('dhome/index',$data);
     }
 
