@@ -42,7 +42,8 @@ class Controller_Dhome extends Controller
                 $insertdata->file_name = $file[0]['saved_as'];
                 $insertdata->upload_time = date('y/m/d H:I:s');
                 $insertdata->save();
-                
+               // Response::redirect('http://localhost/hardening/public/index.php/dhome/index', 'refresh');
+
             }
 
             // エラー有り
