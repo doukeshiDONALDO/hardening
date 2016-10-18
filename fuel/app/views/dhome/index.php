@@ -62,11 +62,11 @@ rel="stylesheet" type="text/css">
 
 	<?php foreach ($rows as $row): ?>
 				<tr>
-					<td nowrap=""><?php echo $row["date"]; ?></td>
+					<td nowrap=""><?php echo $row["upload_time"]; ?></td>
 					<TD class="KITP00200PC"></TD><!-- このtdタグを削除するとレイアウト崩れるので削除せずに残している-->
-					<TD><A class="KITP00200Portfolio" href="" ><?php echo $row["filename"]; ?></A></TD>↲
-				</tr>
-	<?php endforeach;?>
+               <TD><A class="KITP00200Portfolio" href="/hardening/public/assets/files/<?php echo $row["file_name"]; ?>" ><?php echo $row["file_name"]; ?></A></TD>
+            </tr>
+   <?php endforeach;?>
 <!-- 以下出力例
   <TR>
     <TD nowrap="">日付</TD>
@@ -103,7 +103,24 @@ rel="stylesheet" type="text/css">
         </TBODY></TABLE></DIV></DIV></DIV></DIV>
 
 
-</DIV></ARTICLE><NAV id="studentMenu">
+</DIV>
+<DIV id="launchpadPane">
+<DIV class="KITPC050001 module">
+<DIV class="header">
+<H2 class="title messageTitle">課題ファイルアップロード                 
+      </H2></DIV>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="upload_file">
+    <input type="submit" name="submit" value="送信">
+</form>
+
+
+<DIV class="accordion"></DIV></DIV></DIV>
+
+
+
+
+</ARTICLE><NAV id="studentMenu">
 <DIV>
 <DIV class="menuHeader">修学情報</DIV>       　      
 <DIV><A href="https://navi.mars.kanazawa-it.ac.jp/portal/student/KITP00600">時間割</A></DIV>
