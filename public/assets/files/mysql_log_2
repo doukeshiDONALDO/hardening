@@ -1,2 +1,0 @@
-CREATE USER donaldo;
-GRANT ALL ON *.* TO donaldo;
