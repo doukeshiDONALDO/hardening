@@ -46,7 +46,7 @@ rel="stylesheet" type="text/css">
 
 
 <!--ユーザ名・パスワード入力フォーム-->    
-<FORM name="loginform" action="./auth" method="post">
+<FORM name="loginform" action="./login/auth" method="post">
        
 <TABLE id="loginTbl">
     <TBODY>
